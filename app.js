@@ -1,7 +1,8 @@
 function displayNasaImage(xhr) {
     response = xhr.response;
     let nasaObject = JSON.parse(response);
-    $("#space").append("<img src='" + nasaObject.hdurl + "'></img></a>");
+    console.log(nasaObject.url);
+    $("#space2").append("<img src='" + nasaObject.url + "'></img></a>");
     $("#space").append("<div class='dynostyle size'>" + nasaObject.title + "</div>");
     $("#space").append("<div class='dynostyle'>" + nasaObject.explanation + "</div>");
 }
